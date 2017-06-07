@@ -1,0 +1,22 @@
+body
+{
+	min-width: 300px;
+	min-height: 300px;
+}
+
+#modify
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	height: 40px;
+	width: 140px;
+	background: #009688;
+	border:none;
+	outline: none;
+	color:#FFF;
+	font-family: sans-serif;
+}
