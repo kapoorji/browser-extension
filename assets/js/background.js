@@ -17,7 +17,7 @@ chrome.extension.onMessage.addListener(
 
     if (request.msg === "modify") {
       var params = Object.assign({},_defaults,request.defaults);
-      console.log(params);
+      
       modifyDOM(function () {
         sendResponse(params);
 

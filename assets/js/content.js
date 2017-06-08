@@ -11,9 +11,12 @@ chrome.runtime.onMessage.addListener(
 		var color = request.color;
 		var tags = request.tags;
 		
+		var k = (request.pattern === "All") ? 1 : 2;
+
+
 		for(var i = 0;i < tags.length;i++) {
 			var tag = document.querySelectorAll(tags[i]);
-			for(var j = 0;j < tag.length;j++)
+			for(var j = 0;j < tag.length;j = j + k)
 				tag[j].style.color = color;
 		}	
 
