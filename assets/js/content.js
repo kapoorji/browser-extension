@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(
 	
 		var color = request.color;
 		var tags = request.tags;
-
+		
 		for(var i = 0;i < tags.length;i++) {
 			var tag = document.querySelectorAll(tags[i]);
 			for(var j = 0;j < tag.length;j++)
